@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.whole-drum {
+  width: 330px;
+  height: 330px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+
+}
+
+.drum-pad {
+  border-radius: 10px;
+  cursor: pointer;
+  outline:none;
+}
+.drum-pad:hover,.drum-pad:focus{
+  background-color: rgba(219, 42, 42, 0.726);
+}
